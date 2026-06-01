@@ -36,36 +36,6 @@ This repository collects issue reports for MiniMax Code, optimized for mobile su
 
 ---
 
-## About the product
-
-| Capability | Description |
-| --- | --- |
-| **Agent Team** | Define the goal. MiniMax Code builds the team — solos the simple, teams up on the complex. |
-| **Memory & Evolution** | Persistent memory of your habits, preferences, and projects — grows into your best partner over time. |
-| **Chat Integration** | Works inside the chat apps you already use. Local files and remote tasks, done in the conversation. |
-| **Command Input** | Everything is in the input box — skills, memories, schedules, teams. |
-
-## Pricing
-
-| Plan | Price |
-| --- | --- |
-| Plus | $20 / month |
-| Max | $50 / month |
-| Ultra | $70 / month (originally $120) |
-
-See [Pricing](#) · [Token Plan](#) · [Developer Docs](#)
-
----
-
-## Links
-
-- [API Documentation](#)
-- [Changelog](#)
-- [Console Login](#)
-- [Terms of Service](#) · [Privacy Policy](#)
-
----
-
 <div align="center">
 
 © 2026 MiniMax. All rights reserved.
