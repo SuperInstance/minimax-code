@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://filecdn.minimax.chat/public/dd60d61e-12bb-4ec5-a011-8a696e6aef6b.png" alt="MiniMax Code" width="100%" />
+<img src="https://filecdn.minimax.chat/public/c3ebbd2e-f55b-48d7-adff-030abb63e06d.png" alt="MiniMax Code" width="100%" />
 
 # MiniMax Code
 
