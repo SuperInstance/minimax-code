@@ -6,7 +6,9 @@
 
 **Remembers your habits, builds Agent teams, automates the repetitive work.**
 
-[Download for macOS](#) · [Download for Windows](#) · [Submit an Issue](../../issues/new/choose)
+[Download for macOS](https://agent.minimax.io/download) · [Download for Windows](https://agent.minimax.io/download) · [Submit an Issue](../../issues/new/choose)
+
+[简体中文](./README.zh-CN.md)
 
 </div>
 
