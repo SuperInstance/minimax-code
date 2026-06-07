@@ -1,0 +1,82 @@
+{
+  "$schema": "https://superinstance.ai/schema/provider-config/v1",
+  "description": "SuperInstance provider configuration for MiniMax Code with z.ai GLM-5.1 as primary and DeepInfra as fallback.",
+  "providers": {
+    "primary": {
+      "name": "zai",
+      "display_name": "z.ai",
+      "base_url": "https://api.zai.chat/v1",
+      "model": "glm-5.1",
+      "api_key_env": "SIA_ZAI_API_KEY",
+      "capabilities": [
+        "code_completion",
+        "code_generation",
+        "code_review",
+        "refactoring",
+        "explanation",
+        "debugging",
+        "test_generation"
+      ],
+      "max_tokens": 8192,
+      "supports_streaming": true,
+      "supports_function_calling": true
+    },
+    "fallback": {
+      "name": "deepinfra",
+      "display_name": "DeepInfra",
+      "base_url": "https://api.deepinfra.com/v1/openai",
+      "api_key_env": "SIA_DEEPINFRA_API_KEY",
+      "strategy": "ordered",
+      "max_retries": 5,
+      "models": [
+        {
+          "id": "deepinfra/seed-2.0-mini",
+          "display_name": "Seed 2.0 Mini",
+          "best_for": ["quick_fixes", "completions", "snippets"],
+          "max_tokens": 4096,
+          "priority": 1
+        },
+        {
+          "id": "deepinfra/gemma-4",
+          "display_name": "Gemma 4",
+          "best_for": ["general_generation", "chat", "documentation"],
+          "max_tokens": 8192,
+          "priority": 2
+        },
+        {
+          "id": "deepinfra/nemotron-120b",
+          "display_name": "Nemotron 120B",
+          "best_for": ["complex_algorithms", "reasoning", "code_review"],
+          "max_tokens": 16384,
+          "priority": 3
+        },
+        {
+          "id": "deepinfra/qwen-3.6",
+          "display_name": "Qwen 3.6",
+          "best_for": ["multilingual", "instruction_following", "translation"],
+          "max_tokens": 8192,
+          "priority": 4
+        },
+        {
+          "id": "deepinfra/hermes-405b",
+          "display_name": "Hermes 405B",
+          "best_for": ["large_refactoring", "creative_solutions", "long_context"],
+          "max_tokens": 32768,
+          "priority": 5
+        }
+      ]
+    }
+  },
+  "defaults": {
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "timeout_ms": 30000,
+    "retry_on_failure": true,
+    "fallback_on_error": true
+  },
+  "cost_management": {
+    "track_usage": true,
+    "warn_threshold_percent": 80,
+    "monthly_budget_usd": 0
+  }
+}
